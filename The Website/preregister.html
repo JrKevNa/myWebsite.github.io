@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="preregister.css"/>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i id="btn">MENU</i>
+            <i id="cancel">BACK</i>
+        </label>
+        <img src="../asset/LOGO_SMALL_NEW.jpg">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="maps.html">MAPS</a></li>
+            <li><a href="agents.html">AGENTS</a></li>
+            <li><a class="listing" href="sysreq.html">SYSTEM REQUIREMENTS</a></li>
+            <li><a href="#" class="prereg exception">PRE - REGISTER</a></li>
+        </ul>
+    </nav>
+
+    <div class="entire-header">
+        <h1 class="header">PRE - REGISTER</h1>
+    </div>
+
+    <form id="form-register">
+        <div class="content">
+            <div class="content-text">
+                <p>EMAIL</p>
+                <input type="text" id="email">
+                <p class="error" id="error-email"></p>
+            </br>
+            </br>
+                <p>USERNAME</p>
+                <input type="text" id="username">
+                <p class="error" id="error-username"></p>
+            </br>
+            </br>
+                <p>PASSWORD</p>
+                <input type="password" id="password">
+                <p class="error" id="error-password"></p>
+            </br>
+            </br>
+                <p>DATE OF BIRTH</p>
+                <input type="date" id="birthday">
+                <p class="error" id="error-birthday"></p>
+            </br>
+            </br>
+                <p>NATIONALITY</p>
+                <input type="text" id="nationality">
+                <p class="error" id="error-nationality"></p>
+            </br>
+            </br>
+                <input class="larger" type="checkbox" id="checkbox">
+                <div class="agree-text">I AGREE TO LAFORANT'S TERMS OF USE & PRIVACY POLICY</div>
+                <p class="error" id="error-checkbox"></p>
+            </br>
+            </br>
+            <input class="register" type="submit">
+            <!-- <a href="#" class="register">REGISTER</a> -->
+            </div>
+    
+        <div>
+            <div class="side-Img"></div>
+        </div>
+        </div>
+    </form>
+
+    <footer>
+        <div class="footer">
+            <img class="footer-icon" src="../SOSMED/facebook logo bw.png">
+            <img class="footer-icon" src="../SOSMED/instagram logo bw.png">
+            <img class="footer-icon" src="../SOSMED/youtube logo bw.png">
+            <img class="footer-icon" src="../SOSMED/twitter logo bw.png">
+            <span class="footer-word">@2021 LaForant</span>
+        </div>
+    </footer>
+</body>
+<script src="preregister.js"></script>
+</html>

@@ -1,0 +1,122 @@
+@font-face { font-family: Camptonb; src: url('Campton-BoldDEMO.otf'); } 
+@font-face { font-family: Camptonl; src: url('Campton-LightDEMO.otf'); } 
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Camptonl';
+}
+
+h1
+{
+    font-size: 45px;
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+h3
+{
+    font-size: 27px;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+.canyonpreview
+{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.canyontext
+{
+    margin: 15px;
+    width: 43vw;
+}
+
+.canyon
+{
+    width: 57vw;
+}
+
+.canyonpics
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    justify-content: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.canyondetails
+{
+    height: 220px;
+    margin: 10px;
+}
+
+.corpuspreview
+{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.moremaps
+{
+    margin: 50px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+@media(max-width: 800px)
+{
+    h1 
+    {
+        font-size: 35px;
+    }
+
+    h2 
+    {
+        font-size: 30px;
+        text-align: center;
+    }
+    h3 
+    {
+        font-size: 22px;
+        text-align: justify;
+    }
+    .canyonpreview
+    {
+        flex-direction: column-reverse;
+    }
+    .canyontext
+    {
+        width: 90vw;
+    }
+    .canyon_
+    {
+        width: 100vw;
+    }
+    .canyon
+    {
+        width: 100vw;
+    }
+    .canyondetails
+    {
+        height: 180px;
+    }
+
+    .corpuspreview
+    {
+        flex-direction: column;
+    }
+}

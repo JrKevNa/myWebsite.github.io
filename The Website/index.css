@@ -1,0 +1,553 @@
+@font-face { font-family: Camptonb; src: url('Campton-BoldDEMO.otf'); } 
+@font-face { font-family: Camptonl; src: url('Campton-LightDEMO.otf'); } 
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body
+{
+    font-family: 'Camptonl';
+}
+
+h1
+{
+    font-size: 45px;
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+h3
+{
+    font-size: 27px;
+}
+
+
+/* beginning of nav bar */
+
+nav
+{
+    background:rgb(26, 26, 26);
+    height: 60px;
+}
+
+nav img
+{
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 15px;
+}
+
+nav ul li a
+{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+nav ul li a:before
+{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.exception:hover:before
+{
+    transform: scaleX(0);
+}
+
+label #btn, label #cancel
+{
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+label #btn:hover, label #cancel:hover
+{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#check
+{
+    display: none;
+}
+
+@media(max-width: 1000px)
+{
+    h1
+    {
+        font-size: 40px;
+    }
+
+    h2
+    {
+        font-size: 35px;
+    }
+
+    h3
+    {
+        font-size: 22px;
+    }
+
+    nav img 
+    {
+        left: 8%;
+    }
+}
+
+@media(max-width: 900px)
+{
+    h1
+    {
+        font-size: 30px;
+    }
+
+    h2
+    {
+        font-size: 25px;
+    }
+
+    h3
+    {
+        font-size: 17px;
+    }
+
+    nav img 
+    {
+        left: 6%;
+    }
+    nav ul li a 
+    {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 800px)
+{
+    h1
+    {
+        font-size: 25px;
+    }
+
+    h2
+    {
+        font-size: 20px;
+    }
+
+    h3
+    {
+        font-size: 12px;
+    }
+
+    /* for navbar */
+    label #btn
+    {
+        display: block;
+        top: 60px;
+        z-index: 9;
+    }
+    ul 
+    {
+        position: fixed;
+        width: 100%;
+        /* height: 100vh; */
+        /* height: 100%; */
+        background: rgb(30, 30, 30);
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li 
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a 
+    {
+        font-size: 12px;
+    }
+    #check:checked ~ ul 
+    {
+        left: 0px;
+        z-index: 10;
+    }
+    #check:checked ~ label #btn
+    {
+        display: none;
+    }
+    #check:checked ~ label #cancel
+    {
+        display: block;
+        z-index: 9;
+    }
+}
+
+/* end of navbar */
+
+.entire-header
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    font-size: xx-large;
+    flex-wrap: wrap;
+}
+
+.header
+{
+    text-align: center;
+}
+
+.into-img 
+{
+    padding: 0;
+    position: relative;
+    text-align: center;
+    color: white;
+
+    /* background-color: black; */
+    /* display: none; */
+}
+
+.centered 
+{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prereg-size
+{
+    font-size: 28px;
+}
+
+.prereg
+{
+    color: white;
+    background-color: rgba(172, 44, 44, 1);
+    padding: 9px;
+    border-radius: 6px;
+}
+
+.prereg:hover
+{
+    background-color: rgba(172, 44, 44, 0.8);
+    transition: none;
+    cursor: pointer;
+}
+
+.bottom
+{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 72px;
+}
+
+.introduction
+{
+    color: white;
+}
+
+@media(max-width: 800px)
+{
+    .centered
+    {
+        font-size: 12px;
+    }
+    .prereg
+    {
+        padding: 9px;
+        font-size: 16px;
+    }
+    .bottom
+    {
+        top: 85%;
+        font-size: 21px;
+    }
+}
+
+.desc
+{
+    margin: 30px;
+    text-align: justify;
+    max-width: 100%;
+    z-index: 2;
+
+    font-size: 20px;
+}
+
+/* meet the agents */
+
+.text-banner
+{
+    /* font-family: "Camptonb"; */
+    text-align: center;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    padding: 10px;
+    font-size: 72px;
+}
+
+.meet-the-agents
+{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.char-img
+{
+    position: relative;
+    height: 500px;
+}
+
+#vauban
+{
+    position: absolute;
+    left: 150px;
+}
+
+.text-agents
+{
+    margin-left: 200px;
+}
+
+.maximize
+{
+    margin-top: 50px;
+    font-family: Camptonb;
+    font-size: 50px;
+}
+
+.maximize-text
+{
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+    font-size: 20px;
+}
+@media(max-width: 1000px)
+{
+    .char-img
+    {
+        height: 450px;
+    }
+}
+@media(max-width: 900px)
+{
+    .text-banner
+    {
+        font-size: 44px;
+    }
+    .char-img
+    {
+        height: 400px;
+    }
+    .text-agents
+    {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .maximize
+    {
+        margin-top: 0px;
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 800px)
+{
+    .text-banner
+    {
+        font-size: 30px;
+    }
+    .char-img
+    {
+        display: none;
+    }
+    .text-agents
+    {
+        margin: 50px 0px 50px 0px;
+    }
+    .maximize
+    {
+        margin-top: 0px;
+        font-size: 30px;
+    }
+    .maximize-text
+    {
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+}
+
+/* teh battlefields */
+.the-battlefields
+{
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.map-img
+{
+    position: relative;
+    height: 350px;
+    margin-top: 50px;
+}
+
+.know
+{
+    margin-top: 50px;
+    font-family: Camptonb;
+    font-size: 50px;
+}
+
+.text-maps
+{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+@media(max-width: 1000px)
+{
+    .map-img
+    {
+        height: 250px;
+    }
+}
+@media(max-width: 900px)
+{
+    .text-banner
+    {
+        font-size: 44px;
+    }
+    .map-img
+    {
+        height: 200px;
+    }
+    .text-maps
+    {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .know
+    {
+        margin-top: 0px;
+        font-size: 30px;
+    }
+}
+@media(max-width: 800px)
+{
+    .the-battlefields
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .text-banner
+    {
+        font-size: 30px;
+    }
+    .map-img
+    {
+        display: none;
+    }
+    .text-maps
+    {
+        margin: 50px 0px 50px 0px;
+    }
+    .know
+    {
+        margin-top: 0px;
+        font-size: 30px;
+    }
+    .maximize-text
+    {
+        margin-bottom: 30px;
+    }
+}
+
+/* footer */
+footer
+{
+    background-color: rgb(0, 0, 0);
+}
+
+.footer
+{
+    display: flex;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding-left: 20px; */
+    align-items: center;
+}
+
+.footer-icon
+{
+    height: 40px;
+    border-radius: 35px;
+    margin-left: 20px;
+}
+
+.footer-word
+{
+    color: white;
+    margin-left: auto;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.footer-icon:hover
+{
+    opacity: 0.7;
+}

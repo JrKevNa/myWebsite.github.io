@@ -1,0 +1,151 @@
+@font-face { font-family: Camptonb; src: url('Campton-BoldDEMO.otf'); } 
+@font-face { font-family: Camptonl; src: url('Campton-LightDEMO.otf'); } 
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Camptonl';
+}
+
+p
+{
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+
+.sys-pic
+{
+    width: 100%;
+}
+
+main
+{
+    margin-bottom: 50px;
+}
+
+.box2
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box
+{
+    background-color: black;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.box-title
+{
+    display: flex;
+    margin-left: 150px;
+}
+
+.last-box
+{
+    display: flex;
+}
+
+.left
+{
+    width: 15%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.center
+{
+    width: 35%;
+    text-align: center;
+}
+
+.right
+{
+    margin-left: 10px;
+    width: 15%;
+}
+
+.invisible
+{
+    color: rgba(255, 255, 255, 0);
+    user-select: none;
+}
+
+.white
+{
+    color: white;
+}
+
+.black-bgr
+{
+    background-color: black;
+    line-height: 100px;
+}
+
+.big-text
+{
+    font-size: 20px;
+}
+
+@media(max-width: 900px)
+{
+    h2 
+    {
+        font-size: 25px;
+    }
+    p
+    {
+        font-size: 15px;
+        color: white;
+        margin: 5px;
+    }
+    .box
+    {
+        width: 150px;
+        padding: 6px;
+        border-radius: 8px;
+    }
+    .white
+    {
+        font-size: 17px;
+    }
+    .black-bgr
+    {
+        line-height: 80px;
+    }
+    .left
+    {
+        width: 20%;
+    }
+    .center
+    {
+        width: 40%;
+    }
+    .right
+    {
+        display: none;
+    }
+}
+
+@media(max-width: 800px)
+{
+    h2 
+    {
+        font-size: 15px;
+    }
+    .white
+    {
+        font-size: 8px;
+    }
+    .black-bgr
+    {
+        line-height: 60px;
+    }
+}

@@ -1,0 +1,125 @@
+@font-face { font-family: Camptonb; src: url('Campton-BoldDEMO.otf'); } 
+@font-face { font-family: Camptonl; src: url('Campton-LightDEMO.otf'); } 
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Camptonl';
+}
+
+p
+{
+    font-size: 20px;
+}
+
+.content
+{
+    display: flex;
+    margin: 20px;
+    font-size: large;
+}
+
+.content-text
+{
+    margin: 50px;
+    margin-top: 20px;
+    width: 600px;
+}
+
+.side-Img
+{
+    background-image: url('../PRE - REGISTER/pict_1.jpg');
+    width: 800px;
+    height: 700px;
+    background-position: center;
+    /* Make the background image cover the area of the <div>, and clip the excess*/
+    background-size: cover;
+}
+
+.error
+{
+    color: red;
+}
+/* .side-Img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.side-Img img {
+    flex-shrink: 0;
+    width: 600px;
+    height: 700px;
+} */
+
+input[type=text], input[type=password], input[type=date]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=date]:hover
+{
+    background-color: rgba(233, 233, 233, 0.8);
+}
+
+input[type=text]:active, input[type=password]:active, input[type=date]:active
+{
+    background-color: rgba(233, 233, 233, 0.8);
+    border-radius: 10px;
+}
+
+input.larger
+{
+    float: left;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+.agree-text
+{
+    font-size: 13px;
+}
+
+.register
+{
+    font-size: xx-large;
+    color: white;
+    background-color: rgba(172, 44, 44, 1);
+    padding: 13px 50px 13px 50px;
+    border-radius: 6px;
+}
+
+.register:hover
+{
+    background-color: rgba(172, 44, 44, 0.8);
+}
+
+@media(max-width: 800px)
+{
+    .header
+    {
+        font-size: 30px;
+    }
+    .side-Img
+    {
+        display: none;
+        width: 0;
+    }
+    .content-text
+    {
+        display: block;
+        margin-left: 30px;
+        margin-right: 50px;
+        width: 100%;
+    }
+}
